@@ -1,4 +1,4 @@
-package advent.code.day1;
+package advent.code.days;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -15,7 +15,6 @@ public class Day1 implements Runnable {
 
     public Day1() {
         File file = new File("src/resources/day1-input.txt");
-
         try (Stream<String> ss = Files.lines(Paths.get(file.getPath()))) {
             AtomicInteger index = new AtomicInteger();
 
